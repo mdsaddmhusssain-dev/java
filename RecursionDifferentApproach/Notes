@@ -1,0 +1,40 @@
+| Feature        | Memoization  | Tabulation | Space Optimized |
+| -------------- | ------------ | ---------- | --------------- |
+| Approach       | Top-Down     | Bottom-Up  | Bottom-Up       |
+| Uses Recursion | ✅ Yes        | ❌ No       | ❌ No            |
+| DP Array       | ✅ Yes        | ✅ Yes      | ❌ No            |
+| Stack Memory   | ✅ Yes        | ❌ No       | ❌ No            |
+| Time           | O(n)         | O(n)       | O(n)            |
+| Space          | O(n) + Stack | O(n)       | O(1)            |
+
+Lekin generally fastest kaun hota hai?
+
+Agar same problem ke sabhi states compute karni hain (jaise Fibonacci), to generally order hota hai:
+
+🥇 Space Optimization (least memory, no recursion)
+
+⬇️
+
+🥈 Tabulation (no recursion)
+
+⬇️
+
+🥉 Memoization (recursion call overhead hota hai)
+
+Recursion ke har function call ka overhead hota hai, 
+isliye theoretical aur practical dono terms me Fibonacci 
+ke liye memoization aam taur par tabulation aur especially 
+space optimization se faster nahi hota.
+
+To short answer:
+
+Memoization: Top-Down approach, recursion use karta hai,
+ sirf required states calculate karta hai.
+
+Tabulation: Bottom-Up approach, recursion nahi hota, 
+chhoti states se badi state build karta hai.
+
+Space Optimization: Tabulation ka optimized version hai
+jo unnecessary DP array hata kar sirf required previous values store karta hai.
+
+Ye teenon Dynamic Programming ke important approaches hain aur problem ke hisab se inka use kiya jata hai.
